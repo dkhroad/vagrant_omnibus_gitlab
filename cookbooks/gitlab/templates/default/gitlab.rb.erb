@@ -1,0 +1,7 @@
+#change the external_url to the address your users will type in their browser
+external_url 'http://192.168.33.11'
+git_data_dir '/vgitlab/git-data'
+
+# limit backup lifetime to 7 days - 604800 seconds
+gitlab_rails['backup_keep_time'] = 604800
+gitlab_rails['backup_path'] = '/vgitlab/backups'
